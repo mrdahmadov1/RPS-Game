@@ -1,0 +1,153 @@
+/*
+## Colors
+
+### Primary
+
+- Scissors Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%)
+- Paper Gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%)
+- Rock Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%)
+- Lizard Gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%)
+- Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%)
+
+### Neutral
+
+- Dark Text: hsl(229, 25%, 31%)
+- Score Text: hsl(229, 64%, 46%)
+- Header Outline: hsl(217, 16%, 45%)
+
+### Background
+
+- Linear Gradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%)
+*/
+
+.row {
+  /* border: 1px solid blue; */
+}
+
+.col {
+  /* border: 1px solid red; */
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+
+  padding: 25px 0 50px;
+
+  color: #fff;
+  background: hsl(237, 49%, 15%);
+  background: linear-gradient(0deg, hsl(237, 49%, 15%) 0%, hsl(214, 47%, 23%) 100%);
+}
+
+.container {
+  width: 85%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header Style */
+header.row {
+  padding: 8px;
+
+  border: 3px solid hsl(217, 16%, 45%);
+  border-radius: 8px;
+
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header.row h1 {
+  margin-bottom: 0;
+  padding: 0;
+  line-height: 0.8;
+  font-weight: 600;
+
+  text-shadow: 3px 2px 2px hsl(217, 16%, 45%);
+}
+
+header.row .win,
+header.row .lose {
+  width: 75px;
+  height: 75px;
+  padding: 6px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+header.row .win p,
+header.row .lose p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.75px;
+  color: hsl(229, 64%, 46%);
+}
+
+header.row p.score {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(229, 25%, 31%);
+}
+
+/*Main Style*/
+main.row {
+  row-gap: 50px;
+  position: relative;
+}
+
+main.row img.bg-triangle {
+  position: absolute;
+  height: 75%;
+  top: 50px;
+  z-index: -1;
+}
+
+main.row button {
+  background-color: #fff;
+  border-radius: 50%;
+  border: 10px solid black;
+}
+
+main.row button.paper {
+  border-color: hsl(230, 89%, 62%);
+}
+
+main.row button.scissors {
+  border-color: hsl(39, 89%, 49%);
+}
+
+main.row button.rock {
+  border-color: hsl(349, 71%, 52%);
+}
+
+main.row button img {
+  margin: 17.5px 5px;
+  width: 75%;
+}
+
+/*Footer Style*/
+footer {
+  text-align: center;
+}
+
+footer button {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid hsl(217, 16%, 45%);
+  border-radius: 8px;
+
+  padding: 6px 24px;
+
+
+  outline: none;
+
+}

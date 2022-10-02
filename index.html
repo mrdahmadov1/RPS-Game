@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper and Scissors</title>
+  <!-- Font-Family Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap Link -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- JS Link -->
+  <script src="js/game.js" defer></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="row">
+      <div class="col col-3 win">
+        <p>Win</p>
+        <p class="score win-score">0</p>
+      </div>
+      <h1 class="col col-5">Rock <br>Paper <br>Scissors</h1>
+      <div class="col col-4 lose">
+        <p>Lose</p>
+        <p class="score lose-score">0</p>
+      </div>
+    </header>
+    <main class="row d-flex align-items-center justify-content-between">
+      <img src="assets/images/bg-triangle.png" alt="bg-triangle" class="bg-triangle">
+      <button class="col col-4 paper">
+        <img src="assets/images/paper.png" alt="Paper">
+      </button>
+      <div class="col col-4"></div>
+      <button class="col col-4 scissors">
+        <img src="assets/images/scissors.png" alt="Scissors">
+      </button>
+      <button class="col col-4 mx-auto rock">
+        <img src="assets/images/rock.png" alt="Rock">
+      </button>
+    </main>
+
+    <footer>
+      <button class="rules">RULES</button>
+    </footer>
+  </div>
+
+</body>
+
+</html>
