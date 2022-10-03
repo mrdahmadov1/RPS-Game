@@ -33,7 +33,7 @@ body {
   height: 100vh;
   font-family: 'Barlow Semi Condensed', sans-serif;
 
-  padding: 25px 0 50px;
+  padding: 25px 0;
 
   color: #fff;
   background: hsl(237, 49%, 15%);
@@ -102,6 +102,7 @@ header.row p.score {
 main.row {
   row-gap: 50px;
   position: relative;
+  display: flex;
 }
 
 main.row img.bg-triangle {
@@ -112,6 +113,8 @@ main.row img.bg-triangle {
 }
 
 main.row button {
+  width: 100px;
+  height: 100px;
   background-color: #fff;
   border-radius: 50%;
   border: 10px solid black;
@@ -127,10 +130,11 @@ main.row button.scissors {
 
 main.row button.rock {
   border-color: hsl(349, 71%, 52%);
+  margin: 0 auto;
 }
 
 main.row button img {
-  margin: 17.5px 5px;
+  margin: auto;
   width: 75%;
 }
 
@@ -146,8 +150,92 @@ footer button {
   border-radius: 8px;
 
   padding: 6px 24px;
-
-
   outline: none;
+}
 
+/*MODAL Rules*/
+.modal-rules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 50px 0;
+  display: none;
+}
+
+.modal-rules h1 {
+  color: hsl(229, 25%, 31%);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.modal-rules .close-rules {
+  border: none;
+}
+
+.modal-rules .close-rules .close {
+  width: 28px;
+  height: 28px;
+  stroke: hsl(217, 16%, 45%);
+}
+
+/* After Choice Main Style */
+main.row.afterChoice {
+  display: none;
+  justify-content: space-between;
+  row-gap: 15px;
+  text-align: center;
+}
+
+.afterChoice div {
+  padding: 0;
+}
+
+.afterChoice p {
+  margin-top: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.house-picked .space {
+  margin: 5px auto 0px;
+  width: 90px;
+  height: 90px;
+  background-color: hsl(237, 49%, 15%);
+  border-radius: 50%;
+  border: none;
+}
+
+/* Info Style */
+.info {
+  display: none;
+}
+
+.info h2 {
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+div.info button.again {
+  width: fit-content;
+  height: fit-content;
+
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+
+  padding: 8px 32px;
+  border: none;
+  border-radius: 8px;
 }

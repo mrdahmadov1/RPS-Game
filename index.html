@@ -33,22 +33,46 @@
         <p class="score lose-score">0</p>
       </div>
     </header>
-    <main class="row d-flex align-items-center justify-content-between">
+    <main class="row beforeChoice align-items-center justify-content-between">
       <img src="assets/images/bg-triangle.png" alt="bg-triangle" class="bg-triangle">
-      <button class="col col-4 paper">
+      <button class="col col-4 choice paper">
         <img src="assets/images/paper.png" alt="Paper">
       </button>
       <div class="col col-4"></div>
-      <button class="col col-4 scissors">
+      <button class="col col-4 choice scissors">
         <img src="assets/images/scissors.png" alt="Scissors">
       </button>
-      <button class="col col-4 mx-auto rock">
+      <button class="col col-4 choice rock">
         <img src="assets/images/rock.png" alt="Rock">
       </button>
+    </main>
+    <main class="row afterChoice">
+      <div class="col col-4 you-picked">
+        <button class="picked"></button>
+        <p>You Picked</p>
+      </div>
+      <div class="col col-4 house-picked">
+        <button class="space"></button>
+        <p>The House Picked</p>
+      </div>
+      <div class="info">
+        <h2>You Win</h2>
+        <button class="again">Play Again</button>
+      </div>
     </main>
 
     <footer>
       <button class="rules">RULES</button>
+      <div class="modal-rules">
+        <h1>Rules</h1>
+        <img src="assets/images/image-rules.png" alt="Image Rules">
+        <button class="close-rules">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="close">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
     </footer>
   </div>
 
