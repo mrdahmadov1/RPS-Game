@@ -101,11 +101,14 @@ againBtn.addEventListener("click", function () {
 const btnOpenRules = document.querySelector(".rules");
 const btnCloseRules = document.querySelector(".close-rules");
 const modalRules = document.querySelector(".modal-rules");
+const beforeModal = document.querySelector(".before");
 
 btnOpenRules.addEventListener("click", function () {
   modalRules.style.display = "flex";
+  beforeModal.style.display = "block";
 });
 
 btnCloseRules.addEventListener("click", function () {
   modalRules.style.display = "none";
+  beforeModal.style.display = "none";
 });
